@@ -1,0 +1,24 @@
+.backbtn {
+    display: flex;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.backbtn>a {
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .BGBody {
+        max-width: 100%;
+    }
+
+    .details {
+        max-width: 100% !important;
+        font-size: 14px !important;
+    }
+
+    .imgdetails {
+        display: none;
+    }
+}

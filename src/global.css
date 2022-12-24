@@ -1,0 +1,35 @@
+:root {
+    --background-color: #edf2f4;
+    --light: #d8dbe0;
+    --dark: #28292c;
+    --text-color: #2b2d42;
+    --color-primary: #d90429;
+}
+
+@font-face {
+    font-family: gameplay;
+    src: url(Gameplay.ttf);
+}
+
+@font-face {
+    font-family: mineglobal;
+    src: url(mineglobal.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    margin-top: -100px;
+    font-size: 30px !important;
+    color: var(--color-primary)
+}
+
+.swiper-pagination-progressbar-fill {
+    background-color: var(--color-primary) !important;
+}

@@ -1,0 +1,163 @@
+body {
+  background: var(--background-color);
+  height: 100%;
+}
+
+.mySwiper {
+  margin-top: 2vh;
+}
+
+.Footer {
+  font-family: "League Spartan";
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer-box {
+  width: 60vh;
+}
+
+.footer-box,
+span,
+p {
+  margin: 5px;
+  color: var(--text-color);
+}
+
+.footer-box>button {
+  width: 10vh;
+  height: 5vh;
+  margin: 10px;
+}
+
+.myButton {
+  background-color: transparent;
+  border-radius: 5px;
+  border: 2px solid #ff0000;
+  display: inline-block;
+  cursor: pointer;
+  color: var(--text-color);
+  font-family: Arial;
+  font-size: 18px;
+  margin-top: 10px;
+  padding: 10px 40px;
+  text-decoration: none;
+  text-shadow: 0px 0px 1px #000000;
+  transition: all 0.3s;
+}
+
+.myButton:hover {
+  background-color: transparent;
+  border: 2px solid #8f0000;
+  transform: scale(1.1);
+}
+
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+.toggle-switch {
+  position: relative;
+  width: 200px;
+  margin-left: 10px;
+}
+
+.label-switch {
+  position: absolute;
+  width: 30%;
+  height: 30px;
+  background-color: var(--dark);
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.input-switch {
+  position: absolute;
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  transition: 0.3s;
+  margin: 0;
+}
+
+.input-switch:checked~.slider {
+  background-color: var(--light);
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  box-shadow: inset 28px -4px 0px 0px var(--light);
+  background-color: var(--dark);
+  transition: 0.3s;
+}
+
+.input-switch:checked~.slider::before {
+  transform: translateX(30px);
+  background-color: var(--dark);
+  box-shadow: none;
+}
+
+.MovieListMobile {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  #title {
+    font-size: 60px !important;
+  }
+
+  .MovieListMobile {
+    display: flex;
+    justify-content: center;
+  }
+
+  ul {
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+    display: grid !important;
+    justify-items: start !important;
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+
+  .MovieListDesktop {
+    display: none;
+  }
+
+  .footer-box {
+    width: 40vh;
+  }
+
+  .toggle-switch {
+    position: relative;
+    width: 200px;
+    margin-left: 40%;
+  }
+
+  .label-switch {
+    margin-top: -53px;
+  }
+}
+
+@media (max-width: 820px) {
+  #title {
+    font-size: 75px;
+  }
+
+  .label-switch {
+    margin-top: -53px;
+  }
+}
