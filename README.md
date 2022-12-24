@@ -1,7 +1,13 @@
 # Space Movies
 <h3>Este é um projeto utilizando a API da TMDB.</h3>
 
-<h3>Link para ver o projeto no ar!</h3>
+<h3>Algumas screenshots do projeto</h3>
+![space-movies-print1](https://user-images.githubusercontent.com/116293621/209451429-4bcdd0dc-0837-42ed-867b-257033f733d2.jpg)
+
+![space-movies-print2](https://user-images.githubusercontent.com/116293621/209451430-28d51e97-eb38-4da8-9237-c7351f2724e2.jpg)
+
+
+<h3>Link para ver o projeto no ar</h3>
 <p>https://space-movies-react.netlify.app/</p>
 
 <h1>Linguagens Utilizadas.</h1>
